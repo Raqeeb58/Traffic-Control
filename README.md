@@ -8,6 +8,10 @@ Outputs:
   3'b001 = Green
   3'b010 = Yellow
   3'b100 = Red
+m1-->(straight from left to right),
+m2 -->(straight from left to right themn turn right   
+m3-->(straight from down to up then turn right),
+m4--> (straight from right to left then turn left as well as go straight) 
 
 States and Timing:
 The FSM moves through 6 states, each representing a phase in traffic light control:
@@ -19,5 +23,6 @@ s4	2 cycles	Yellow for m1 and m2
 s5	4 cycles	m3 → Green; others Red
 s6	2 cycles	Yellow for m3, others Red
 After s6, the FSM loops back to s1.
-m1 
+
+
 
