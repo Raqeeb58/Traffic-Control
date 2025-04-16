@@ -1,16 +1,22 @@
 # Traffic-Control
 1. traffic_control Module (Main FSM Controller)
+2. 
 Inputs:
 clk: System clock.
 rst: Asynchronous reset.
+
 Outputs:
  m1, m2, m3, m4: 3-bit signals representing traffic lights on 4 different roads.
   3'b001 = Green
   3'b010 = Yellow
   3'b100 = Red
+  
 m1-->(straight from left to right),
+
 m2 -->(straight from left to right themn turn right   
+
 m3-->(straight from down to up then turn right),
+
 m4--> (straight from right to left then turn left as well as go straight) 
 
 States and Timing:
